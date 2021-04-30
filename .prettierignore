@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+dist
+node_modules
+webpack.config.js
+assets
+
+# Ignore all HTML files:
+*.html
