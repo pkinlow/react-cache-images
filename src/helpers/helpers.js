@@ -19,11 +19,11 @@ export async function precacheImages(imageUrls) {
     image.src = src;
   }));
 
-  const allSettled = await Promise.allSettled(promises).then(results => results.reduce(({images, errors}, {value}) => {
+  const allSettled = await Promise.allSettled(promises).then(results => results.reduce(({images, errors}, {value, reason}) => {
     if (value) {
       images.push(value);
     } else {
-      errors.push(value);
+      errors.push(reason);
     }
 
     return {images, errors};
