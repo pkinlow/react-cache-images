@@ -1,3 +1,3 @@
 # react-cache-images
-npm install
-npm run start
+- npm install
+- npm run start
