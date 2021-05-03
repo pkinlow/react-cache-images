@@ -1,2 +1,3 @@
-# wvus-react-starter
-React Starter For World Vision US
+# react-cache-images
+npm install
+npm run start
